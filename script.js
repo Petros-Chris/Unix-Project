@@ -1,19 +1,16 @@
-export function runCommand() {
-    const { exec } = require('child_process');
+
+
+function runCommand() {
+    const { exec } = require('node:child_process');
 
     const command = 'mcrcon -H 174.88.85.18 -p password "deop WomanFunny"';
 
     // Example: execute the 'ls' command
-    exec('ls', (error, stdout, stderr) => {
+    exec(command, (error) => {
         if (error) {
             console.error(`Error: ${error.message}`);
             return;
         }
-        if (stderr) {
-            console.error(`stderr: ${stderr}`);
-            return;
-        }
-        console.log(`stdout: ${stdout}`);
     });
 
     //location.reload(); //and this would reload the page, loading the log again
