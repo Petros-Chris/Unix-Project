@@ -15,9 +15,9 @@
     </div>
 
     <script>
-
-       setInterval(fetchLog(), 11000);
-
+        setInterval(fetchLog, 2000);
+        fetchLog();
+        
         document.getElementById('userInput').addEventListener('keypress', function (event) {
             if (event.keyCode == 13) { //if enter key is pressed :)
                 runCommand();
