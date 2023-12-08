@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id = "consoleBox">
+        <h1>
+            Console Stuff:
+        </h1>
+        <p>Question: Should guest get to see logs?</p>
+        <div id="consoleWords"></div>
+        <p>here is supposed to show a map? i think this entire page would be replaced with a map using smtg like Dynmap</p>
+        <p>Admin would probably have a button to also view map? and button would appear based off localsession</p>
+        <p>or somehow we find a way to make the map small and tiny</p>
+    </div>
+
+    <script>
+        fetchLog();
+
+        function fetchLog() {
+            //this is fetch stuff
+            fetch('latest.log')
+                .then(response => response.text())
+                .then(logData => {
+
+                    const lines = logData.split('\n'); //this spilts the text based off the /n (it auto generates /n when reading the file)
+
+                    const last10Lines = lines.slice(-20); //this makes it where it only keeps the last 20 lines of data
+
+                    const formattedLog = last10Lines.join('<br>'); //this joins the splited text with a <br> between them all
+
+                    document.getElementById('consoleWords').innerHTML = formattedLog;
+                })
+                .catch(error => {
+                    console.error('Error fetching log file:', error);
+                });
+        }
+
+    </script>
+</body>
+
+</html>
