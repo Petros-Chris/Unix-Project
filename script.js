@@ -1,6 +1,6 @@
 
 
-export default function runCommand() {
+ function runCommand() {
     const { exec } = require('node:child_process').exec;
     const command = 'mcrcon -H 174.88.85.18 -p password "deop WomanFunny"';
 
