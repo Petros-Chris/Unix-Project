@@ -2,12 +2,14 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="script.js"></script>
-    
+    <script type="module" src="script.js">
+        import runCommand from './script.js';
+    </script>
+
 </head>
 
 <body>
-    
+
     <div id="consoleBox">
         <h1>
             Console Stuff
@@ -28,7 +30,7 @@
 
 
     <script>
-        import runCommand from './script.js';
+
         setInterval(fetchLog, 2000);
         fetchLog();
 
