@@ -3,6 +3,13 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <script type="module" src="script.js">
+        import { runCommand } from './script.js';
+
+        document.getElementById('userInput').addEventListener('keypress', function (event) {
+            if (event.keyCode == 13) {
+                runCommand();
+            }
+        });
     </script>
 
 </head>
@@ -34,12 +41,6 @@
 
         setInterval(fetchLog, 2000);
         fetchLog();
-
-        document.getElementById('userInput').addEventListener('keypress', function (event) {
-            if (event.keyCode == 13) { //if enter key is pressed :)
-                runCommand();
-            }
-        });
 
         function fetchLog() {
             //this is fetch stuff

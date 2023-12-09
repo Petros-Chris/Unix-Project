@@ -22,7 +22,3 @@ export function runCommand() {
         console.error('Error:', error);
     });
 }
-
-
-
-const command = 'mcrcon -H 174.88.85.18 -p password "deop WomanFunny"';
