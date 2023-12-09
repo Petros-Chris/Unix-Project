@@ -1,6 +1,5 @@
-
 export function runCommand() {
-    const serverUrl = '167.99.185.29/admin.html'; // Replace with your server URL
+    const serverUrl = '167.99.185.29/admin.html';
     const command = 'mcrcon -H 174.88.85.18 -p password "deop WomanFunny"';
 
     // Sending a POST request to the server
@@ -14,7 +13,7 @@ export function runCommand() {
     .then(response => response.json())
     .then(data => {
         console.log('Server response:', data);
-        // Perform any actions based on the server response
+        
         fetchLog();
         document.getElementById("userInput").value = "";
     })
