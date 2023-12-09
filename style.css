@@ -45,3 +45,8 @@ body {
     padding: 20px;
     margin-top: 50px;
 }
+
+.btn {
+    width: 200px;
+    height: 100px;
+}
