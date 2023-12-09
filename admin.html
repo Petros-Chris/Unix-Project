@@ -5,11 +5,7 @@
     <script type="module" src="script.js">
         import { runCommand } from './script.js';
 
-        document.getElementById('userInput').addEventListener('keypress', function (event) {
-            if (event.keyCode == 13) {
-                runCommand();
-            }
-        });
+
     </script>
 
 </head>
@@ -38,7 +34,13 @@
 
 
     <script>
-
+        document.getElementById('userInput').addEventListener('keypress', function (event) {
+            if (event.keyCode == 13) {
+                alert("ecahonlfcsdnhlkvfghbklnrdfjpoisrgvf");
+                runCommand();
+            }
+        });
+        
         setInterval(fetchLog, 2000);
         fetchLog();
 
