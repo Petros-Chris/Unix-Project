@@ -1,8 +1,8 @@
 export function runCommand() {
     const serverUrl = '167.99.185.29/admin.html';
     const command = 'mcrcon -H 174.88.85.18 -p password "deop WomanFunny"';
+    "mcron"
 
-    // Sending a POST request to the server
     fetch(`${serverUrl}/execute-command`, {
         method: 'POST',
         headers: {
