@@ -36,7 +36,7 @@
 
 ![](ImagesForReadMe/helpImage4.png)
 
-<p>Once you have successfully created your droplet (we went for a 6 dollar a month droplet running Debian 12), you would need to launch the droplet console to install an websever which in this case we went with apache2</p>
+<p>Once you have successfully created your droplet (we suggest getting the 6 dollar a month droplet running Debian 12 as it is enough to run our project), you would need to launch the droplet console to install an websever which in this case we went with apache2</p>
 
 ![](ImagesForReadMe/helpImage5.png)
 
